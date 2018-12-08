@@ -12,9 +12,6 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
     public void today()
     {
@@ -28,4 +25,12 @@ public class AppTest
       WhsDate date = new WhsDate(2018, 12, 25);
       assertEquals(WhsDayOfWeek.TUESDAY, date.getDayOfWeek());
     }
+
+    @Test
+    public void graceHopper()
+    {
+      WhsDate date = new WhsDate(1906, 12, 9);
+      assertEquals(WhsDayOfWeek.SUNDAY, date.getDayOfWeek());
+    }
+
 }
