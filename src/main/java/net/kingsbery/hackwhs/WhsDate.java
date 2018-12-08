@@ -13,7 +13,7 @@ public class WhsDate {
   }
 
   public WhsDayOfWeek getDayOfWeek() {
-    return WhsDayOfWeek.SATURDAY;
+    return WhsDayOfWeek.getByValue(3);
   }
 
 }
